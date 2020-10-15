@@ -1,0 +1,2 @@
+# nuxtinit
+web for salih
