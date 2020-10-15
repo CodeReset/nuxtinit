@@ -1,0 +1,30 @@
+$xs: 500px;
+$sm: 767px;
+$md: 1280px;
+$lg: 1440px;
+$xl: 1920px;
+/* stylelint-disable */
+@mixin test($media) {
+  @if ($media == "xs") {
+    @media screen and (max-width: $xs) {
+      @content;
+    }
+  } @else if($media == "sm") {
+    @media screen and (max-width: $sm) {
+      @content;
+    }
+  } @else if($media == "md") {
+    @media screen and (max-width: $md) {
+      @content;
+    }
+  } @else if($media == "lg") {
+    @media screen and (max-width: $lg) {
+      @content;
+    }
+  } @else if($media == "xl") {
+    @media screen and (max-width: $xl) {
+      @content;
+    }
+  }
+}
+/* stylelint-enable */
